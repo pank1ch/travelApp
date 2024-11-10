@@ -1,0 +1,25 @@
+button {
+  border-radius: 4px;
+  border: none;
+  padding: 15.5px 16px 15.5px 36px;
+  color: #112211;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+
+  background-color: #8dd3bb;
+  background-repeat: no-repeat;
+  background-position: 14px 50%;
+  background-size: 16px 16px;
+}
+
+.flights-booking-button {
+  background-image: url("/images/icons/paper-plane-icon.svg");
+}
+
+.hotels-booking-button {
+  background-image: url("/images/icons/building-icon.svg");
+}
+
+

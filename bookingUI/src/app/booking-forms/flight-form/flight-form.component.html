@@ -1,0 +1,47 @@
+<form class="booking-form" (ngSubmit)="onSubmit()">
+  <div class="booking-form__container">
+
+    <div class="booking-form__control control control--destination">
+      <label class="control__label" for="departure">From</label>
+      <input class="control__input" type="text" id="departure" placeholder="Dubai">
+    </div>
+
+    <div class="booking-form__control control control--destination">
+      <label  class="control__label" for="destination">To</label>
+      <input class="control__input" type="text" id="destination" placeholder="New York">
+    </div>
+
+    <div class="booking-form__control control control--trip-type">
+      <label  class="control__label" for="trip-type">Trip</label>
+
+      <select class="control__input" id="trip-type">
+        <option value="one-way">One-way</option>
+        <option value="return">Return</option>
+      </select>
+    </div>
+
+    <div class="booking-form__control control control--date">
+      <input type="hidden" name="departure-date">
+      <input type="hidden" name="return-date">
+
+      <label class="control__label">Depart-Return</label>
+      <button type="button" class="control__input">there - back</button>
+    </div>
+
+    <div class="booking-form__control control control--passengers">
+      <input type="hidden" id="passengers">
+      <label class="control__label">Passengers</label>
+      <button type="button" class="control__input">1 Passenger</button>
+    </div>
+
+    <div class="booking-form__control control control--seats">
+      <input type="hidden" id="seat-class">
+
+      <label class="control__label">Class</label>
+      <button type="button" class="control__input">Economy</button>
+    </div>
+
+  </div>
+  <search-booking-button title="Show Filghts" type="flights" class="booking-form__submit"/>
+
+</form>

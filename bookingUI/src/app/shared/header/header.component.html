@@ -1,0 +1,29 @@
+<header [class]="{
+  'page-header': true,
+  'page-header--landing-page': isLandingPage
+}">
+  <nav class="page-header__navigation">
+    <ul class="page-header__list booking-list">
+      <li class="booking-list__item">
+        <a class="booking-list__link booking-list__link--flights" href="#">Find Flights</a>
+      </li>
+      <li class="booking-list__item">
+        <a class="booking-list__link booking-list__link--hotels" href="#">Find Stays</a>
+      </li>
+    </ul>
+
+    <a class="page-header__logo" href="#">
+      <img class="page-header__image" src="images/logo.svg" alt="Логотип компании Golobe.">
+    </a>
+
+    <ul class="page-header__list authentication-list">
+      <li class="authentication-list__item">
+        <a class="authentication-list__link" href="#">Login</a>
+      </li>
+      <li class="authentication-list__item">
+        <a class="authentication-list__link authentication-list__link--sign-up" href="#">Sign up</a>
+      </li>
+    </ul>
+
+  </nav>
+</header>

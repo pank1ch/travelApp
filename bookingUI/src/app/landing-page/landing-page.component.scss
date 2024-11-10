@@ -1,0 +1,135 @@
+.intro-wrapper {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
+    url("/images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 32px;
+  margin-top: 30px;
+  border-radius: 24px;
+  padding-bottom: 247px;
+}
+
+.hero{
+  text-align: center;
+  font-family: 'TradeGothic LT', sans-serif;
+  color: #ffffff;
+  background-color:  transparent;
+}
+
+.hero__title{
+  font-weight: 700;
+  font-size: 45px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.hero__title span {
+  text-transform: uppercase;
+  font-size: 80px;
+}
+
+.hero__subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+}
+
+.booking-options{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 33px;
+
+  padding-bottom: 10px;
+}
+
+.booking-options__item {
+
+  border-right: 1px solid #d7e2ee;
+
+  &:last-child {
+    border: none;
+    // padding: 14px 32px 14px 64px;
+  }
+}
+
+.booking-options__btn {
+  display: block;
+  padding: 14px 32px;
+
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #112211;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &--hotels{
+    margin-left: 34px;
+  }
+
+}
+
+
+
+.booking-options__btn::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.booking-options__btn--flights::before{
+  background-image: url("/images/icons/airplane-icon-black.svg");
+}
+
+.booking-options__btn--hotels::before{
+  background-image: url("/images/icons/bed-icon-black.svg");
+}
+
+// .booking-list__link::before {
+//   position: absolute;
+//   content: "";
+//   width: 24px;
+//   height: 24px;
+//   background-repeat: no-repeat;
+//   left: -28px;
+//   top: 50%;
+//   transform: translateY(-50%);
+
+// }
+
+// .booking-list__link--flights::before {
+//   background-image: url("/images/icons/airplane-icon-white.svg");
+// }
+
+// .booking-list__link--hotels::before {
+//   background-image: url("/images/icons/bed-icon-white.svg");
+// }
+
+
+
+
+.booking__container {
+  position: relative;
+}
+
+.booking__nav-bar {
+  position: absolute;
+  bottom: 0;
+  left: 6px;
+  width: 100px;
+  height: 4px;
+  background-color: #8DD3BB;
+  transition: left 0.3s ease, width 0.3s ease; /* Плавное перемещение и изменение ширины */
+}
