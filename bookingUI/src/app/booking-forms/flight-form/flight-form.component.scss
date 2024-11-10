@@ -1,0 +1,91 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.booking-form__container{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.control {
+
+  flex-grow: 1;
+  position: relative;
+  margin-right: 24px;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.control--destination{
+  max-width: 167px;
+}
+
+.control--trip-type {
+  max-width: 140px;
+}
+
+.control--date {
+  max-width: 300px;
+}
+
+.control--passengers{
+  max-width: 168px;
+}
+
+.control--seats {
+  max-width: 170px;
+}
+
+.control__label {
+  position: absolute;
+  padding: 0 4px;
+  top: -9px;
+  left: 12px;
+
+  z-index: 1;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: #112211;
+  background-color: #ffffff;
+}
+
+
+.control__input{
+  box-sizing: border-box;
+  width: 100%;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1c1b1f;
+  padding: 18px 16px;
+  border: 1px solid #79747e;
+  border-radius: 4px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+
+.booking-form__submit{
+  align-self: flex-end;
+}
+
+.control--trip-type .control__input {
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  &::-ms-expand{
+    display: none;
+  }
+
+}
+
+

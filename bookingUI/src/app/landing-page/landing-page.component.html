@@ -1,0 +1,42 @@
+<div class="intro-wrapper">
+  <app-header [isLandingPage]="true"/>
+
+  <section class="hero">
+    <h1 class="visually-hidden">Globe - a service for booking flights and hotels.</h1>
+    <p class="hero__title">Helping Others <br>
+      <span>Live & Travel</span>
+    </p>
+    <p class="hero__subtitle">Special offers to suit your plan</p>
+
+</section>
+</div>
+
+<section class="booking">
+
+  <app-form-wrapper location="landingPage">
+    <div class="booking__container">
+      <ul class="booking__nav booking-options">
+
+        <li class="booking-options__item">
+          <button class="booking-options__btn booking-options__btn--flights" (click)="onBookingFormSelect('flights')">Flights</button>
+        </li>
+        <li class="booking-options__item">
+          <button class="booking-options__btn booking-options__btn--hotels"  (click)="onBookingFormSelect('hotels')">Stays</button>
+        </li>
+
+      </ul>
+      <div #navBar class="booking__nav-bar" [style.left.px]="leftCoordinates"></div>
+    </div>
+
+
+    @if (true) {
+      <app-flight-form ngProjectAs="form"/>
+    }
+  </app-form-wrapper>
+</section>
+
+
+
+
+
+<app-footer />

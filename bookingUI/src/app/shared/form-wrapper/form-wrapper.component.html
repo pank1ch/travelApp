@@ -1,0 +1,10 @@
+<div [class]="{
+  'landing-page-form-wrapper': location === 'landingPage',
+  'flights-form-wrapper':  location === 'flights',
+  'hotels-form-wrapper': location === 'hotels'
+}">
+  <ng-content />
+  <ng-content select="form" />
+</div>
+
+

@@ -1,0 +1,111 @@
+.page-header{
+  background-color: #ffffff;
+
+
+
+  &--landing-page{
+    background-color: transparent;
+    margin-bottom: 70px;
+  }
+
+}
+
+.page-header__navigation{
+  display: flex;
+
+  padding: 24px 0;
+}
+
+
+.page-header__logo {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 425px;
+}
+
+
+
+.booking-list, .authentication-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-self: center;
+}
+
+.booking-list__item {
+  margin-right: 60px;
+
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:first-child {
+    margin-left: 28px;
+  }
+
+}
+
+.booking-list__link{
+  position: relative;
+  padding: 10px 0;
+}
+
+.booking-list__link::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  left: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.booking-list__link--flights::before {
+  background-image: url("/images/icons/airplane-icon-white.svg");
+}
+
+.booking-list__link--hotels::before {
+  background-image: url("/images/icons/bed-icon-white.svg");
+}
+
+.authentication-list__item{
+  margin-right: 8px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.authentication-list__link, .booking-list__link{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+.booking-list__link{
+  color: #ffffff;
+}
+
+
+
+
+.authentication-list__link {
+  display: block;
+  padding: 16px 24px;
+  text-align: center;
+  min-width: 104px;
+  box-sizing: border-box;
+}
+
+.authentication-list__link--sign-up {
+  background-color: #ffffff;
+  color: #112211;
+  border-radius: 8px;
+}
